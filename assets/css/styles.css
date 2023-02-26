@@ -57,14 +57,17 @@ a {
 }
 /*======Header =====*/
 
-.header {
-    position: relative;
-    height: 100vh;
+.fixed-header {
     background-color: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
 }
+
 .navbar {
     display: flex;
-    padding-top: 38px;
+    padding: 12px 0;
     align-items: center;
 }
 
@@ -100,8 +103,18 @@ a {
     border-radius: 8px;
 }
 
+/*======Hero=====*/
+
+.hero-wrap {
+    position: relative;
+    height: 100vh;
+    background-color: #e6f0ff;
+    display: flex;
+    flex-direction: column;
+}
+
 .hero .info {
-    margin-top: 130px;
+    margin-top: 118px;
     width: 51%;
 }
 
